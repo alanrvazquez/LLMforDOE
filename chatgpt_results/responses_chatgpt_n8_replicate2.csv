@@ -1,0 +1,45 @@
+Question #,TaskID,Prompt,Resolution,WordLengthPattern,ClearInteractions,Response
+1,2,"You are an expert in the subfield of statistics called design of experiments. Your goal is to construct a two-level fractional factorial design with maximum resolution and minimum aberration. The number of factors is 5 and the number of runs is 8. The factors have two levels, coded as '-1' and '+1'. You will only generate a table containing the design. You will not generate any text explaining the table or your answer. The table must be in a comma-separated values (CSV) format. Specifically, the values in the table must be separated by ‘,’ and each row must end with ‘\’. In the table, the first row will be used as a header row to count the factors starting at ‘1’. The first column will be called “Run” and used to count the number of runs starting at ‘1’. Each design cell (excluding the header and Run columns) must contain either ‘-1’ or ‘1’. Construct the two-level fractional factorial design with 8 runs and 5 factors that has maximum resolution and minimum aberration.",3,None,0,"```
+Run,1,2,3,4,5\
+1,-1,-1,-1,1,1\
+2,1,-1,-1,-1,-1\
+3,-1,1,-1,-1,1\
+4,1,1,-1,1,-1\
+5,-1,-1,1,-1,1\
+6,1,-1,1,1,-1\
+7,-1,1,1,1,1\
+8,1,1,1,-1,-1\
+```"
+2,1,"You are an expert in the subfield of statistics called design of experiments. Your goal is to construct a two-level fractional factorial design with maximum resolution and minimum aberration. The number of factors is 4 and the number of runs is 8. The factors have two levels, coded as '-1' and '+1'. You will only generate a table containing the design. You will not generate any text explaining the table or your answer. The table must be in a comma-separated values (CSV) format. Specifically, the values in the table must be separated by ‘,’ and each row must end with ‘\’. In the table, the first row will be used as a header row to count the factors starting at ‘1’. The first column will be called “Run” and used to count the number of runs starting at ‘1’. Each design cell (excluding the header and Run columns) must contain either ‘-1’ or ‘1’. Construct the two-level fractional factorial design with 8 runs and 4 factors that has maximum resolution and minimum aberration.",4,None,0,"```csv
+Run,1,2,3,4\
+1,-1,-1,-1,-1\
+2,1,-1,-1,1\
+3,-1,1,-1,1\
+4,1,1,-1,-1\
+5,-1,-1,1,1\
+6,1,-1,1,-1\
+7,-1,1,1,-1\
+8,1,1,1,1\
+```"
+3,4,"You are an expert in the subfield of statistics called design of experiments. Your goal is to construct a two-level fractional factorial design with maximum resolution and minimum aberration. The number of factors is 7 and the number of runs is 8. The factors have two levels, coded as '-1' and '+1'. You will only generate a table containing the design. You will not generate any text explaining the table or your answer. The table must be in a comma-separated values (CSV) format. Specifically, the values in the table must be separated by ‘,’ and each row must end with ‘\’. In the table, the first row will be used as a header row to count the factors starting at ‘1’. The first column will be called “Run” and used to count the number of runs starting at ‘1’. Each design cell (excluding the header and Run columns) must contain either ‘-1’ or ‘1’. Construct the two-level fractional factorial design with 8 runs and 7 factors that has maximum resolution and minimum aberration.",3,None,0,"```csv
+Run,1,2,3,4,5,6,7\
+1,-1,-1,-1,-1,1,1,1\
+2,1,-1,-1,1,-1,-1,1\
+3,-1,1,-1,1,1,-1,-1\
+4,1,1,-1,-1,-1,1,-1\
+5,-1,-1,1,1,1,1,-1\
+6,1,-1,1,-1,-1,-1,-1\
+7,-1,1,1,-1,1,-1,1\
+8,1,1,1,1,-1,1,1\
+```"
+4,3,"You are an expert in the subfield of statistics called design of experiments. Your goal is to construct a two-level fractional factorial design with maximum resolution and minimum aberration. The number of factors is 6 and the number of runs is 8. The factors have two levels, coded as '-1' and '+1'. You will only generate a table containing the design. You will not generate any text explaining the table or your answer. The table must be in a comma-separated values (CSV) format. Specifically, the values in the table must be separated by ‘,’ and each row must end with ‘\’. In the table, the first row will be used as a header row to count the factors starting at ‘1’. The first column will be called “Run” and used to count the number of runs starting at ‘1’. Each design cell (excluding the header and Run columns) must contain either ‘-1’ or ‘1’. Construct the two-level fractional factorial design with 8 runs and 6 factors that has maximum resolution and minimum aberration.",3,None,0,"```csv
+Run,1,2,3,4,5,6\
+1,-1,-1,-1,1,1,1\
+2,1,-1,-1,-1,-1,1\
+3,-1,1,-1,-1,1,-1\
+4,1,1,-1,1,-1,-1\
+5,-1,-1,1,-1,-1,-1\
+6,1,-1,1,1,1,-1\
+7,-1,1,1,1,-1,1\
+8,1,1,1,-1,1,1\
+```"
