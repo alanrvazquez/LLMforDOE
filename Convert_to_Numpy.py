@@ -8,7 +8,6 @@ from datetime import datetime
 df = pd.read_csv("chatgpt_results/responses_chatgpt_n16_replicate5.csv")
 
 # Generate dated filename
-#today_str = datetime.today().strftime('%Y%m%d')
 filename = f"numpy_results/parsed_responses_n16_replicate5.npy"
 
 # Parser for embedded CSV tables
