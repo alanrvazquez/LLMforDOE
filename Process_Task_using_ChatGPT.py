@@ -58,6 +58,7 @@ for ii in range(nReplicates):
     
         results.append({
             "Question #": idx + 1,
+            "RunSize": task.get("N"),
             "TaskID": task.get("ID"),
             "Prompt": prompt,
             "Resolution": task.get("resolution"),
