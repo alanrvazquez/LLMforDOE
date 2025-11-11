@@ -53,12 +53,13 @@ for (k in k.start:(n-1)){
 each.instruction = list()
 for (ii in 1:length(designs)){
   output.ID = paste('"ID":', ii)
+  output.N = paste('"N":', n)
   output.prompt = paste('"prompt":', paste('"', prompts[[ii]], '"', sep = ''))
   output.clearint = paste('"clearIteractions":', ClearINTs[[ii]])
   output.res = paste('"resolution":', resolutions[[ii]])
   MAtext = paste("[", paste(MomentAberration[[ii]]$a, collapse = ","), "]", sep = "")
   output.momentaberration = paste('"MomentAberrationPattern":', MAtext)
-  single.instruction = paste(output.ID, output.prompt, output.res, output.clearint, 
+  single.instruction = paste(output.ID, output.N, output.prompt, output.res, output.clearint, 
                             output.momentaberration, sep = ',')
   each.instruction[[ii]] = paste("{", single.instruction, "}", sep = '')
 }
