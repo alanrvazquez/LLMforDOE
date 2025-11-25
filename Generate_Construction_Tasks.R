@@ -7,7 +7,7 @@ goal = "Your goal is to construct a two-level fractional factorial design with m
 levels_context = "The factors have two levels coded as '-1' and '+1'"
 step_by_step = " You will think step by step about how to construct the design"
 template = "However, you will only generate a table containing the design. You will not generate any text explaining the table or your answer"
-format.template = "The table must be in a comma-separated values (CSV) format. Specifically, the values in the table must be separated by ‘,’ and each row must end with ‘\\\\’. In the table, the first row will be used as a header row to count the factors starting at ‘1’. The first column will be called “Run” and used to count the number of runs starting at ‘1’. Each design cell (excluding the header and Run columns) must contain either ‘-1’ or ‘1’" 
+format.template = "The table must be in a comma-separated values (CSV) format. Specifically, the values in the table must be separated by ‘,’ and each row must end with ‘\\\\’. In the table, the first row will be used as a header row to label the factors using the letters in the English alphabet starting with ‘A’. The first column will be called “Run” and used to count the number of runs starting at ‘1’. Each design cell (excluding the header and Run columns) must contain either ‘-1’ or ‘1’" 
 
 n = 32 
 k.start = log2(n) + 1
