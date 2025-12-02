@@ -11,6 +11,7 @@ format.template = "The table must be in a comma-separated values (CSV) format. S
 
 n = 32 
 k.start = log2(n) + 1
+k.max = min(n-1, 26)
 name_instruction_set = paste("instructions/instruction_dataset_n", n, ".json", sep = '')
 designs = list()
 resolutions = list()
@@ -19,7 +20,7 @@ ClearINTs = list()
 prompts = list()
 
 citer = 1
-for (k in k.start:(n-1)){
+for (k in k.start:k.max){
   
   # Create prompt.
   size_context = paste("The number of factors is", k, "and the number of runs is", n)
