@@ -2,18 +2,10 @@
 
 R and Python code to accompany Vazquez, A. R. and Rother, K. M. (2025). "A systematic assessment of Large Language Models for constructing two-level fractional factorial designs." Submitted to *Quality Engineering*.
 
-This github repository contains the following sections:
 
-A. SCRIPT FILES
+## A. SCRIPT FILES
 
-B. UTILITY CODE 
-
-D. DATA FOLDERS
-
-
-## A. SCRIPT FILES.
-
-Use these to construct the design construction tasks and process them using GPT or Gemini models.
+Use these to generate the design construction tasks, process them using GPT or Gemini models, adn evaluate the resulting designs.
 
 - `Generate_Construction_Tasks.R`: R code to generate design construction tasks using Prompt 2. The tasks are saved into a folder called **instructions**.
 
@@ -25,17 +17,17 @@ Use these to construct the design construction tasks and process them using GPT 
 - `Evaluate_Designs.py`: Python code to evaluate the designs constructed using an LLM. The results from the evaluation are saved into a folder called **evaluation_results**.
 
 
-## B. UTILITY CODE.
+## B. UTILITY CODE
 
 It includes files used to evaluate and process the designs and tasks.
 
 -  `DoE_functions.R`: Set of R functions to evaluate two-level fractional factorial designs.
 
--  `FrF2.py`: Set of Python functions to evaluate two-level fractional factorial designs.
+-  `FrF2.py`: Set of Python functions to evaluate two-level fractional factorial designs. The file also contains functions to turn the output of an LLM into numpy arrays.
 
 
 
-## C. DATA FOLDERS.
+## C. DATA FOLDERS
 
 - **instruction**: Contains the JSON files with the design construction tasks for the LLMs.
 
