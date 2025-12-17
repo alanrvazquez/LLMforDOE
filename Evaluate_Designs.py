@@ -5,11 +5,11 @@ import re
 from datetime import datetime
 from FrF2 import *
 
-# Load folder
+# Load folder ("gemini" or "gpt")
 llm = "gemini"
 
 # Set up information
-nRunsize = 32
+nRunsize = 8
 nReplicates = 10
 nFactors = min(nRunsize-1, 26) - int(np.log2(nRunsize))
 
@@ -50,47 +50,4 @@ for ii in range(nReplicates):
             citer = citer + 1
 
 des_evaluation.to_excel(f"evaluation_results/n{nRunsize}_{llm}.xlsx", index=False)
-des_evaluation
-# Number of feasible designs
-(des_evaluation
-.sort_values('Factors')
-.groupby(["Runs", "Factors"])
-.count()
-)
 
-# Evaluation in terms of resolution  
-(des_evaluation
-.groupby(["Runs", "Factors"])
-.agg(Min = ("Resolution", "min"),
-     Median = ("Resolution", "median"),
-     Max = ("Resolution", "max"))
-)
-
-## Read MA designs
-
-# Define the columns of the DataFrame
-
-MAcolumns = ['Runs', 'Factors', 'Resolution', 'MA']
-MAEvaluation = pd.DataFrame(columns=MAcolumns)
-
-factor_list = [6, 7, 8, 9, 10, 12, 14, 15, 17, 18]
-citer = 0
-for jj in factor_list:
-
-    MAdes = np.loadtxt(f'MA_designs/MA_n32_k{jj}.csv', delimiter=',')
-
-    N, n = np.shape(MAdes)
-    
-    # Resolution
-    R = resolution(MAdes)
-    
-    # Moment aberration
-    MApattern = moment_aberration(MAdes)
-    
-    MAEvaluation.loc[citer] = [N, n, R, MApattern.round(decimals = 3)]
-    citer = citer + 1
-
-nRunsize = 32
-MAEvaluation.to_excel(f"evaluation_results/MA_designs_n{nRunsize}.xlsx", index=False)
-moment_aberration(MAdes)
-MAEvaluation
