@@ -1,3 +1,11 @@
+###############################################################
+# AUXILIAR FUNCTIONS TO EVALUATE AND PROCESS DESIGNS
+#
+# Authors: Marco V. Charles-Gonzalez and Alan R. Vazquez
+# Affiliation: Tecnologico de Monterrey
+#
+###############################################################
+
 import numpy as np
 import math
 from scipy.special import stirling2
