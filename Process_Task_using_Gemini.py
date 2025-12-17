@@ -1,3 +1,11 @@
+###############################################################
+# CODE TO PROCESS THE CONSTRUCTION TASKS USING GEMINI
+#
+# Authors: Marco V. Charles-Gonzalez and Alan R. Vazquez
+# Affiliation: Tecnologico de Monterrey
+#
+###############################################################
+
 import json
 import pandas as pd
 import datetime
@@ -9,15 +17,11 @@ from google import genai
 from google.genai import types
 
 # ✅ Set uthe number of replicates for the experimets
-nReplicates = 12
-nRuns = 32
-
-# ✅ Set up secure HTTP client to fix SSL verification issues
-#ssl_context = ssl.create_default_context(cafile=certifi.where())
-#http_client = httpx.Client(verify=ssl_context)
+nReplicates = 10
+nRuns = 8
 
 # ✅ Initialize Gemini client
-client_Gemini = genai.Client(api_key="")  
+client_Gemini = genai.Client(api_key="YOUR API KEY")  
 
 print("Starting Gemini Query Script")
 print(datetime.datetime.now())
@@ -27,7 +31,7 @@ input_file = 'instructions/instruction_dataset_n' + str(nRuns) + '.json'
 with open(input_file, 'r', encoding='utf-8') as f:
     tasks = json.load(f)
 
-for ii in range(11,nReplicates):
+for ii in range(nReplicates):
 
     random.shuffle(tasks)  # ✅ Randomize submission order
     
