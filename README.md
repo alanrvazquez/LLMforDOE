@@ -5,7 +5,9 @@ R and Python code to accompany Vazquez, A. R. and Rother, K. M. (2025). "A syste
 This github repository contains the following sections:
 
 A. SCRIPT FILES
+
 B. UTILITY CODE 
+
 D. DATA FOLDERS
 
 
