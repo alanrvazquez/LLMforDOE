@@ -1,7 +1,8 @@
 # LLMforDOE
 
-R and Python code to accompany Vazquez, A. R. and Rother, K. M. (2025). "A systematic assessment of Large Language Models for constructing two-level fractional factorial designs." Submitted to *Quality Engineering*.
+[![DOI](https://zenodo.org/badge/1091876126.svg)](https://doi.org/10.5281/zenodo.17958795)
 
+R and Python code to accompany Vazquez, A. R. and Rother, K. M. (2025). "A systematic assessment of Large Language Models for constructing two-level fractional factorial designs." Submitted to *Quality Engineering*.
 
 ## A. SCRIPT FILES
 
