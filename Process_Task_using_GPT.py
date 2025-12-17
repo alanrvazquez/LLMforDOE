@@ -1,3 +1,11 @@
+###############################################################
+# CODE TO PROCESS THE CONSTRUCTION TASKS USING GPT
+#
+# Authors: Marco V. Charles-Gonzalez 
+# Affiliation: Tecnologico de Monterrey
+#
+###############################################################
+
 import json
 import pandas as pd
 import datetime
@@ -10,7 +18,7 @@ from openai import OpenAI
 
 # ✅ Set uthe number of replicates for the experimets
 nReplicates = 10
-nRuns = 32
+nRuns = 8
 
 # ✅ Set up secure HTTP client to fix SSL verification issues
 ssl_context = ssl.create_default_context(cafile=certifi.where())
