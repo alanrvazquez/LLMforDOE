@@ -1,3 +1,11 @@
+###############################################################
+# CODE TO EVALUATE DESIGNS 
+#
+# Authors: Marco V. Charles-Gonzalez and Alan R. Vazquez
+# Affiliation: Tecnologico de Monterrey
+#
+###############################################################
+
 import pandas as pd
 import numpy as np
 import io
